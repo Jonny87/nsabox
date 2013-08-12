@@ -1,10 +1,10 @@
 '''
-Created on 28.07.2013
+Created on 10.08.2013
 
 @author: Mischa
 '''
 
-class CaptureMode(object):
+class Observer(object):
     '''
     classdocs
     '''
@@ -14,9 +14,8 @@ class CaptureMode(object):
         '''
         Constructor
         '''
-    
-    def capture(self):
-        pass
         
-    def stopCapturing(self):
-        pass
+class Observable(object):
+    
+    def __init__(self):
+        self.__observers = []
